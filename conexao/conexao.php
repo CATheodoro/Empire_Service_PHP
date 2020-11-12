@@ -1,9 +1,9 @@
 <?php 
     class Conexao{
-        private static $dbNome = 'empire';
+        private static $dbNome = 'empire_service';
         private static $dbHost = 'localhost';
         private static $dbUsuario = 'root';
-        private static $dbSenha = '';
+        private static $dbSenha = 'password';
 
         private static $cont = null;
 

@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="form-group text-white">
-            <label for="txtDescricao">Decrição</label>
+            <label for="txtDescricao">Descrição</label>
             <textarea class="form-control" id="txtDescricao" name="txtDescricao" placeholder="Descreva qual é o problema" rows="3"></textarea>
         </div>
         <div class="form-group text-white">

@@ -34,7 +34,7 @@
                 <option disabled selected>Selecione um Laboratório</option>
                 <?php
                     foreach ($listarLaboratorio as $laboratorio) {?>
-                            <option value="<?php echo $laboratorio['id']; ?>" selected><?php echo $laboratorio['descricaoLab']; ?></option>
+                            <option value="<?php echo $laboratorio['id']; ?>"><?php echo $laboratorio['descricaoLab']; ?></option>
                         <?php }
                 ?>  
                 </select>

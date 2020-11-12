@@ -17,6 +17,6 @@
                 <input type="text" class="form-control" id="txtDescricao" name="txtDescricao" placeholder="Informe o nome do laboratório" required>
             </div>
         <br>
-        <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Cadastrar computador</button>
+        <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Cadastrar laboratório</button>
         
         <?php require "../footer.php";?>
