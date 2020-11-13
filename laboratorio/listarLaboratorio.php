@@ -30,7 +30,6 @@
                 <td><?php echo $laboratorio['descricaoLab']; ?></td>
                 <td><div>
                         <a href="#" onclick="JavaScript:location.href='../laboratorio/frmEditarLaboratorio.php?id=<?php echo $laboratorio['id'];?>'"> <i class="material-icons">edit_road</i></a>
-                        <a href="#" class="remover" onclick="removerLab();"> <i class="material-icons">delete</i></a>
                     </div> 
                 </td>
             </tr>
@@ -38,14 +37,5 @@
 
     </table>
 
-            <script>
-
-                function removerLab(){
-                    var remover = confirm("Deseja remover <?php echo $laboratorio['descricaoLab']?>?");
-                    if (remover){
-                        location.href="../laboratorio/backend/removerLaboratorio.php?id=<?php echo $laboratorio['id']; ?>"
-                    }
-                };
-            </script>
 
 <?php require "../footer.php";?>

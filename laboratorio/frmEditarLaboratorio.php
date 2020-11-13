@@ -43,7 +43,18 @@
 
         <br>
         <button class="btn btn-outline-danger"onclick="JavaScript:location.href='../laboratorio/listarLaboratorio.php'">Voltar</button>
+        <a class="btn btn-danger" onclick="removerLab();"> <i class="material-icons">delete</i></a>
         <button class="btn btn-primary float-right" type="submit" id="btnEditar">Editar</button>
     </form>
 
-    <?php require "../footer.php";?>
+    <script>
+        function removerLab(){
+                var remover = confirm("Deseja remover <?php echo $descricao?>");
+                if (remover){
+                location.href='../laboratorio/backend/removerLaboratorio.php?id=<?php echo $id?>'
+            }
+                    
+        };
+    </script>
+
+<?php require "../footer.php";?>

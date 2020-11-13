@@ -63,6 +63,17 @@
 
         <br>
         <button class="btn btn-outline-danger" onclick="JavaScript:location.href='../computador/listarComputador.php'">Voltar</button>
+        <a class="btn btn-danger" onclick="removerCom();"> <i class="material-icons">delete</i></a>
         <button class="btn btn-primary float-right" type="submit" id="btnEditar">Editar computador</button>
     </form>
+
+    <script>
+        function removerCom(){
+                var remover = confirm("Deseja remover <?php echo $descricao?>");
+                if (remover){
+                JavaScript:location.href='../computador/backend/removerComputador.php?id=<?php echo $id; ?>'
+            }
+        };
+    </script>
+
     <?php require "../footer.php";?>

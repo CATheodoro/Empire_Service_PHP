@@ -37,7 +37,6 @@
                 <td><?php echo $computadores['descricaoStatus']; ?></td>
                 <td> <div>
                     <a href="#" onclick="JavaScript:location.href='frmEditarComputador.php?id=<?php echo $computadores['id'];?>'"><i class="material-icons">edit_road</i></a>
-                    <a href="#" class="remover" onclick="removerCom();"> <i class="material-icons">delete</i></a>
                     </div>
                 </td>
             </tr>
@@ -45,15 +44,4 @@
 
     </table>
 
-            <script>
-                
-                function removerCom(){
-                    var remover = confirm("Deseja remover <?php echo $computadores['descricaoCom'] ?>");
-                    if (remover){
-                        JavaScript:location.href='../computador/backend/removerComputador.php?id=<?php echo $computadores['id']; ?>'
-                    }
-                    
-                };
-            </script>
-            
 <?php require "../footer.php";?>
