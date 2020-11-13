@@ -39,13 +39,13 @@
                 ?>  
                 </select>
             </div>
-
-                <input type="text" class="form-control" id="txtStatus" name="txtStatus" value="1" hidden>
+            <div class="col-md-0 m-10 text-white">
+                <input type="text" class="form-control" id="txtStatus" name="txtStatus" value="1" hidden/>
+            </div>
 
         </div>
-
-  
         <br>
+        <button class="btn btn-outline-danger" onclick="JavaScript:location.href='../computador/listarComputador.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Cadastrar computador</button>
     </form>
 

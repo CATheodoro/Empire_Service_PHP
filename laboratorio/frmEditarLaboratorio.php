@@ -42,6 +42,7 @@
         </div>
 
         <br>
+        <button class="btn btn-outline-danger"onclick="JavaScript:location.href='../laboratorio/listarLaboratorio.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnEditar">Editar</button>
     </form>
 

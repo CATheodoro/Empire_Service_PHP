@@ -23,10 +23,10 @@
 
         <div class="main_content">
             <div class="header">
-                EMPIRE SERVICES
+                EMPIRE SERVICES 
                 
                 <div class="usuario">
-                    <?php echo $_SESSION['nome'];?> ||
+                    <?php echo $_SESSION['nome'];?> || 
                     <?php echo $_SESSION['email'];?> 
                     <a type="button" class="btn btn-outline-danger" href="../conexao/logout.php">Log Out</a>
                 </div>

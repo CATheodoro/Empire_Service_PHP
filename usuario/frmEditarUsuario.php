@@ -56,7 +56,7 @@
                     <?php 
                         foreach ($listarFuncao as $funcao){
                     ?>
-                        <option value="<?php echo $funcao['id'];?>" selected><?php echo $funcao['descricaoFuncao'];?></option>    
+                        <option value="<?php echo $funcao['id'];?>"><?php echo $funcao['descricaoFuncao'];?></option>    
                     <?php
                         }
                     ?>
@@ -76,7 +76,7 @@
             </div>
         </div>
 
-        
+        <button class="btn btn-outline-danger"onclick="JavaScript:location.href='../usuario/listarUsuario.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Editar usuário</button>
     
         

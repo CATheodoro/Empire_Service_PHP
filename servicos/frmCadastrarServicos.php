@@ -23,7 +23,7 @@
             
 
         <div class="form-row">
-            <div class="col-md-12 m-10 text-white">
+            <div class="col-md-6 m-10 text-white">
             <label for="lblLaboratorio">Selecione um Laboratório</label>
                 <select name="lblLaboratorio" id="lblLaboratorio" class="form-control">
                 <option disabled selected>Selecione um Laboratório</option>
@@ -36,10 +36,8 @@
                 ?>  
                 </select>
             </div>
-        </div>
 
-        <div class="form-row">
-            <div class="col-md-12 m-10 text-white">
+            <div class="col-md-6 m-10 text-white">
             <label for="lblLaboratorio">Selecione um Computador</label>
                 <select name="lblComputador" id="lblComputador" class="form-control">
                 <option disabled selected>Selecione um Computador</option>
@@ -60,6 +58,7 @@
             <textarea class="form-control" id="txtComponentes" name="txtComponentes" placeholder="Caso tenha estragado um componente, descreva quais são eles" rows="3"></textarea>
         </div>
         <br>
+        <button class="btn btn-outline-danger" onclick="JavaScript:location.href='../servico/listarServicos.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Cadastrar computador</button>
     </form>
 

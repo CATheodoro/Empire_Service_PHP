@@ -37,7 +37,7 @@
         <div class="form-row">
             <div class="col-md-2 mb-3 text-white">
                 <label for="id">Código: <?php echo $id;?> </label>
-                <input type="text" class="form-control" id="id" name="id" value="<?php echo $id;?>">
+                <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $id;?>">
             </div>
 
             <div class="col-md-10 mb-3 text-white">
@@ -62,7 +62,7 @@
         </div>
 
         <br>
+        <button class="btn btn-outline-danger" onclick="JavaScript:location.href='../computador/listarComputador.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnEditar">Editar computador</button>
     </form>
-
     <?php require "../footer.php";?>

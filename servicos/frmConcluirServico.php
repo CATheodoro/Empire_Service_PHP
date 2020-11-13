@@ -62,22 +62,26 @@
             </div>
         </div>
 
-        <div class="form-group text-white">
-            <label for="txtDescricao">Decrição</label>
-            <input class="form-control" id="txtDescricao" name="txtDescricao" value="<?php echo $descricao;?>" placeholder="Descreva qual é o problema" rows="3"></input>
+        <div class="form-row">
+            <div class="col-md-12 mb-3 form-group text-white">
+                <label for="txtDescricao">Decrição</label>
+                <input class="form-control" id="txtDescricao" name="txtDescricao" value="<?php echo $descricao;?>"></input>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-9 mb-3 form-group text-white">
+                <label for="txtComponentes">Componentes Estragados</label>
+                <input type="text" class="form-control" id="txtComponentes" name="txtComponentes" value="<?php echo $componentes;?>"></input>
+            </div>
+            <div class="col-md-3 mb-3 form-group text-white">
+                <label for="txtCusto">Custo do Conserto</label>
+                <input type="number" class="form-control" id="txtCusto" name="txtCusto" value="<?php echo $custo;?>"></input>
+            </div>
         </div>
 
-        <div class="form-group text-white">
-            <label for="txtComponentes">Componentes Estragados (opcional)</label>
-            <input type="text" class="form-control" id="txtComponentes" name="txtComponentes" value="<?php echo $componentes;?>" placeholder="Caso tenha estragado um componente, descreva quais são eles" ></input>
-        </div>
-
-        <div class="form-group text-white">
-            <label for="txtCusto">Custo do Conserto (opcional)</label>
-            <input type="text" class="form-control" id="txtCusto" name="txtCusto" value="<?php echo $custo;?>" placeholder="Caso tenha que consertar um componente, informe os custo" ></input>
-        </div>
 
         <br>
+        <button class="btn btn-outline-danger" onclick="JavaScript:location.href='../servico/listarServicos.php'">Voltar</button>
         <button class="btn btn-primary float-right" type="submit" id="btnCadastrar">Concluir</button>
     </form>
 
